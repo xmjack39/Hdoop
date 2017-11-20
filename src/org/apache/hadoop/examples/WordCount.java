@@ -81,7 +81,7 @@ public class WordCount {
 		job.setReducerClass(IntSumReducer.class);
 		job.setOutputKeyClass(Text.class);
 		job.setOutputValueClass(IntWritable.class);
-		
+	//over	
 		FileInputFormat.addInputPath(job, new Path("/usr/local/hadoop-1.2.1/input/"));
 		FileOutputFormat.setOutputPath(job, new Path("/usr/local/hadoop-1.2.1/output/"));
 		System.exit(job.waitForCompletion(true) ? 0 : 1);
